@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can see this app here
+
+https://filmsearcher-901ec.web.app/
+
+
+I recommend using this application from a computer
+
+App have not mobile adaptation
+
 ## Available Scripts
 
 In the project directory, you can run:
