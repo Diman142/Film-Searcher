@@ -1,6 +1,6 @@
 import { CHANHE_INPUT_VALUE, SUBMIT_FORM, SHOW_LOAD, HIDE_LOAD, HIDE_ALERT, SHOW_ALERT, SHOW_POPUP, HIDE_POPUP, DISABLE_BTN, ENABLE_BTN } from './types'
 
-//Action creators/ In last actioncreator I used redu thunk for async operations
+// Action creators/ In last actioncreator I used redu thunk for async operations
 // Film Database is OMDb with open API
 
 export function createRequest(text) {
