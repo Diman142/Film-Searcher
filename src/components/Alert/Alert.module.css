@@ -1,0 +1,36 @@
+.Alert {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-indent: 20px;
+  height: 50px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: #661094;
+  opacity: 0.6;
+  font-style: 32px;
+  color: white;
+  border-radius: 10px;
+}
+
+.Cross {
+  font-size: 24px;
+  color: #fff;
+}
+
+.Close {
+  padding: 0;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  background: #661094;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Cross:hover {
+  color: rgb(114, 107, 107);
+}

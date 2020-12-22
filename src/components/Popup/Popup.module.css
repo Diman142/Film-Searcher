@@ -1,0 +1,24 @@
+.Popup {
+  position: absolute;
+  top: 44%;
+  left: 17.6%;
+  background: rgb(231, 191, 230);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 5px;
+  margin-left: 9px;
+  width: 300px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px 1px 3px 1px rgb(171, 141, 141);
+}
+
+.Popup:after {
+  content: '';
+  border: 8px solid transparent;
+  border-left: 9px solid rgb(231, 191, 230);
+  position: absolute;
+  right: -17px;
+  top: 50%;
+  margin-top: -8px;
+}

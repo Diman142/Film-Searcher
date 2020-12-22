@@ -1,0 +1,14 @@
+.Input {
+  height: 35px;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-indent: 20px;
+  border: none;
+  background-color: #eaeaea;
+  font-size: 14px;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  outline: none;
+}
