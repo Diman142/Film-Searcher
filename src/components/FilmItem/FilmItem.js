@@ -1,23 +1,37 @@
+import { NavLink } from "react-router-dom";
 import React from 'react'
 import classes from './FilmItem.module.css'
 
-export const FilmItem = (props) =>
-(
-  <li>
-    <h3>{props.title}</h3>
-    <div>
-      <img src={props.poster} className={classes.FilmItemImg} alt="poster" />
-      <div>
-        Year of issue:
-        {' '}
-        {props.year}
+
+export const FilmItem = ({ poster, title, imdbID, ratio, type, genre, year, awards, getPath }) => (
+  <li className={classes.FilmItem}>
+    <img src={poster} className={classes.FilmItemImg} alt="poster" />
+    <div className={classes.FilmItemRight}>
+      <div className={classes.FilmItemTop}>
+        <h2 className={classes.FilmItemTitle}>{title}</h2>
+        <NavLink
+          to={`/${imdbID}`}
+          className={classes.FilmItemLink}
+          onClick={() => {
+            getPath(imdbID)
+          }}
+          exact
+        >
+          {`IMDb ${ratio}`}
+
+        </NavLink>
       </div>
-      <div>
-        imdbID:
-        {' '}
-        {props.imdbID}
-      </div>
+
+      <p className={classes.FilmItemNote}>{`${type}  |  ${genre}  |  ${year}`}</p>
+      <span className={classes.FilmItemLine} />
+
+      <p className={classes.FilmItemAward}>{awards}</p>
+
     </div>
   </li>
 )
 
+
+
+
+export default FilmItem

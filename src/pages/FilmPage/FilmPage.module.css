@@ -1,0 +1,141 @@
+.PageTitle{
+  margin-top: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.PageWrap{
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.PageImdb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87px;
+  height: 30px;
+  margin-right: 24px;
+  background-color: #FAC539;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #000;
+  text-decoration: none;
+  line-height: 1;
+  border: none;
+  outline: none;
+}
+
+.Page{
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.Page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 35%;
+  background: linear-gradient(90.3deg, #111111 19%, rgba(17, 17, 17, 0) 99.75%);
+  z-index: 2;
+}
+
+
+
+
+.PageText{
+  font-weight: 600;
+  font-size: 24px;
+  color: #FBFBFB;
+}
+
+
+.PageWatch{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FBFBFB;
+  width: 199px;
+  height: 64px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FBFBFB;
+  text-decoration: none;
+  margin-bottom: 50px;
+  cursor: pointer;
+  z-index: 5;
+
+}
+
+
+.PageNote{
+  width: 415px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FBFBFB
+}
+
+.Plot{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.PlotTitle{
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 52px;
+  color: #323232;
+}
+
+
+.PlotText{
+  color: #323232;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.PlotSubTitle{
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #323232;
+}
+
+.PlotList{
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+.PageFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #111;
+
+}
+
+
+.PageFooterLink{
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  text-decoration: none;
+}

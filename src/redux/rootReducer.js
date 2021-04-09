@@ -5,6 +5,7 @@ import { submitReducer } from './appReducers'
 import { alertReducer } from './alertReducer'
 import { popupReducer } from './popupReducer'
 import { btnReducer } from './btnReducer'
+import pathReducer from './pathReducer'
 
 export const rootReducer = combineReducers({
   inputChange: inputReducer,
@@ -12,5 +13,6 @@ export const rootReducer = combineReducers({
   submit: submitReducer,
   alertControl: alertReducer,
   popup: popupReducer,
-  disBtn: btnReducer
+  disBtn: btnReducer,
+  goToPage: pathReducer
 })

@@ -1,0 +1,66 @@
+.AlsoFilm{
+  position: relative;
+  width: 263px;
+  height: 361px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 52px;
+  padding-bottom: 54px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.AlsoFilmWrap{
+  position: absolute;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 52px;
+  padding-bottom: 54px;
+  top: 0;
+  left: 0;
+  width: 263px;
+  height: 361px;
+  background: linear-gradient(0deg, rgba(20, 19, 19, 0.85), rgba(20, 19, 19, 0.85));
+  border-radius: 10px;
+  transform: translateY(100%);
+  transition: transform .3s ease-in;
+}
+
+.AlsoFilm:hover > .AlsoFilmWrap{
+  transform: translateY(0%);
+}
+
+
+.AlsoFilmTitle{
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  width: 60%;
+}
+
+.AlsoFilmGenre{
+  width: 60%;
+}
+
+.AlsoFilmLink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87px;
+  height: 30px;
+  background-color: #FAC539;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #000;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+
+}
+
+.AlsoFilmLink:hover{
+  background-color: #fcb900;
+}

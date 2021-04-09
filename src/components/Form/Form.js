@@ -13,12 +13,12 @@ import { Popup } from '../Popup/Popup'
 
 const Form = ({ loading, submit, value, onChange, isAlert, hide, isPopup, disabledBtn }) =>
 (
-  <div>
-    {isAlert ? <Alert text="Что-то не так с сервером, попробуйте повторить запрос" onClick={hide} /> : null}
+  <div style={{ display: "flex", justifyContent: "center" }}>
+    {isAlert ? <Alert text="Закончился лимит запросов к БД" onClick={hide} /> : null}
     <form style={{ position: 'relative' }}>
       {isPopup ? <Popup text="Fill in the search fields" /> : null}
-      <Input type="text" title="Enter the name of movie" value={value} onChange={onChange} />
-      <Button type="submit" title="Search movie" onClick={submit} submitData={value} disabled={disabledBtn} />
+      <Input type="text" title="Unlimited movies, TV shows, and more." value={value} onChange={onChange} note="Watch anywhere. Cancel anytime." />
+      <Button type="submit" title="Search" onClick={submit} submitData={value} disabled={disabledBtn} />
     </form>
     {loading ? <Load /> : null}
   </div>
