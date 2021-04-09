@@ -17,9 +17,9 @@ const FilmPage = ({ path }) => {
 
   useEffect(async () => {
     if (path) {
-      const resp = await axios.get(`https://imdb-api.com/en/API/Title/k_vjpsmwej/${path}`)
-      const trailer = await axios.get(`https://imdb-api.com/en/API/Trailer/k_vjpsmwej/${path}`)
-      const img = await axios.get(`https://imdb-api.com/en/API/Images/k_vjpsmwej/${path}`)
+      const resp = await axios.get(`https://imdb-api.com/en/API/Title/k_j7wna0lv/${path}`)
+      const trailer = await axios.get(`https://imdb-api.com/en/API/Trailer/k_j7wna0lv/${path}`)
+      const img = await axios.get(`https://imdb-api.com/en/API/Images/k_j7wna0lv/${path}`)
 
       setTrailerInfo({ ...trailer.data })
       setPageInfo({ ...resp.data })

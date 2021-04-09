@@ -98,13 +98,13 @@ export function submitRequest(searchKey) {
       dispatch(disBtn())
       dispatch(showLoader())
 
-      const response = await axios.get(`https://imdb-api.com/en/API/Search/k_vjpsmwej/${searchKey}`)
+      const response = await axios.get(`https://imdb-api.com/en/API/Search/k_j7wna0lv/${searchKey}`)
 
       const requests = []
 
       response.data.results.forEach((movie, index) => {
-        if (index < 1) {
-          requests.push(axios.get(`https://imdb-api.com/en/API/Title/k_vjpsmwej/${movie.id}`))
+        if (index < 2) {
+          requests.push(axios.get(`https://imdb-api.com/en/API/Title/k_j7wna0lv/${movie.id}`))
         }
       })
 
