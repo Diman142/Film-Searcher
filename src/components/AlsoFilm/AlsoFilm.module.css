@@ -34,15 +34,13 @@
 
 
 .AlsoFilmTitle{
+  margin-top: 0;
   color: #fff;
   font-weight: 800;
-  font-size: 24px;
-  width: 60%;
+
 }
 
-.AlsoFilmGenre{
-  width: 60%;
-}
+
 
 .AlsoFilmLink{
   display: flex;
@@ -63,4 +61,9 @@
 
 .AlsoFilmLink:hover{
   background-color: #fcb900;
+}
+
+.AlsoFilmDescr{
+  height: 180px;
+  overflow: hidden;
 }
