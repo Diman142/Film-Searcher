@@ -5,7 +5,6 @@ import { CHANHE_INPUT_VALUE, SUBMIT_FORM, SHOW_LOAD, HIDE_LOAD, HIDE_ALERT, SHOW
 // Film Database is OMDb with open API
 
 export function createRequest(text) {
-
   return {
     type: CHANHE_INPUT_VALUE,
     payload: text
@@ -114,8 +113,6 @@ export function submitRequest(searchKey) {
 
       allresp.forEach(item => {
 
-
-        // eslint-disable-next-line prefer-const
         let obj = {
           id: item.data.id,
           title: item.data.title,
@@ -128,7 +125,6 @@ export function submitRequest(searchKey) {
         }
 
         filmsData.push(obj)
-
 
         obj = {}
       })

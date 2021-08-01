@@ -25,9 +25,8 @@ const FilmPage = ({ path }) => {
       setPageInfo({ ...resp.data })
       setBg(img.data.items[0].image)
 
-      if (Object.keys(resp.data).length !== 0) {
-        setFlag(true)
-      }
+      if (Object.keys(resp.data).length !== 0) setFlag(true)
+
     }
 
   }, [path])
@@ -44,7 +43,9 @@ const FilmPage = ({ path }) => {
                 <h1 className={classes.PageTitle}>{pageInfo.title}</h1>
                 <div className={classes.PageWrap}>
                   <button className={classes.PageImdb}>{`IMDb ${pageInfo.imDbRating}`}</button>
-                  <p className={classes.PageText}>{`${pageInfo.genreList[0].value || "action"}  |  ${pageInfo.type}  |  ${pageInfo.year}`}</p>
+                  <p className={classes.PageText}>
+                    {`${pageInfo.genreList[0].value || "action"}  |  ${pageInfo.type}  |  ${pageInfo.year}`}
+                  </p>
                 </div>
                 <a className={classes.PageWatch} href={trailerInfo.link}>Watch</a>
                 <p className={classes.PageNote}>{pageInfo.awards}</p>
@@ -85,8 +86,6 @@ const FilmPage = ({ path }) => {
       )
         :
         <Load />}
-
-
     </>
   )
 }

@@ -45,20 +45,16 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 35%;
+  width: 25%;
   background: linear-gradient(90.3deg, #111111 19%, rgba(17, 17, 17, 0) 99.75%);
   z-index: 2;
 }
 
-
-
-
-.PageText{
+.PageText {
   font-weight: 600;
   font-size: 24px;
   color: #FBFBFB;
 }
-
 
 .PageWatch{
   position: relative;
@@ -80,7 +76,6 @@
 
 }
 
-
 .PageNote{
   width: 415px;
   font-size: 18px;
@@ -100,7 +95,6 @@
   line-height: 52px;
   color: #323232;
 }
-
 
 .PlotText{
   color: #323232;
@@ -131,7 +125,6 @@
   background-color: #111;
 
 }
-
 
 .PageFooterLink{
   color: #fff;

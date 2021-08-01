@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './Alert.module.css'
 
-export const Alert = (props) => (
+export const Alert = ({ text, onClick }) => (
   <div className={classes.Alert}>
-    <span>{props.text}</span>
-    <button type="button" className={classes.Close} onClick={() => { props.onClick() }}><span className={classes.Cross}>&times;</span></button>
+    <span>{text}</span>
+    <button type="button" className={classes.Close} onClick={() => onClick()}><span className={classes.Cross}>&times;</span></button>
   </div>
 )

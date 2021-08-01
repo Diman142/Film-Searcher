@@ -31,7 +31,6 @@ const AlsoFilm = ({ data }) => {
           IMDb
           {' '}
           {data.imDbRating}
-
         </NavLink>
       </div>
     </li>

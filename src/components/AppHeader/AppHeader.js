@@ -11,9 +11,7 @@ export const AppHeader = (props) => (
 
         <form
           className={classes.AppHeaderForm}
-          onSubmit={(e) => {
-            e.preventDefault()
-          }}
+          onSubmit={e => e.preventDefault()}
         >
           <input type="text" className={classes.AppHeaderField} />
           <button className={classes.AppHeaderBtn} type="submit" />
